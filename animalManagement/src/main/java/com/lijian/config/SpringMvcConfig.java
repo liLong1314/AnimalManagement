@@ -14,6 +14,10 @@ import org.springframework.web.servlet.view.JstlView;
  * @Author lijia
  * @createTime 2023/5/21 20:11
  */
+
+/**
+ *代替web.xml
+ */
 @Configuration
 @ComponentScan("com.lijian.controller")
 @EnableWebMvc
