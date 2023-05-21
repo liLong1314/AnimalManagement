@@ -76,6 +76,9 @@ public class MybatisConfig {
         Properties properties = new Properties();
         properties.setProperty("pageSizeZero", "true");
         properties.setProperty("reasonable", "true");
+        properties.setProperty("offsetAsPageNum", "true");
+        properties.setProperty("rowBoundsWithCount", "true");
+
 //        properties.setProperty("value", "true");
         pageIntercptor.setProperties(properties);
         return pageIntercptor;

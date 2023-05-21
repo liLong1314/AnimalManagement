@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @createTime 2023/5/20 18:40
  */
 @Configuration
-@ComponentScan("com.lijian.service")
+@ComponentScan({"com.lijian.service","com.lijian.mapper"})
 @EnableTransactionManagement
 @Import({JdbcConfig.class, MybatisConfig.class})
 @PropertySource("db.properties")
