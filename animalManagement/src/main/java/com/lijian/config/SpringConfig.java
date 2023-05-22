@@ -14,6 +14,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan({"com.lijian.service","com.lijian.mapper"})
 @EnableTransactionManagement
 @Import({JdbcConfig.class, MybatisConfig.class})
-@PropertySource("db.properties")
+@PropertySource("classpath:database.properties")
 public class SpringConfig {
+
+
 }

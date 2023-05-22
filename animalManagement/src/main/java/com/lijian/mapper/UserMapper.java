@@ -1,6 +1,9 @@
 package com.lijian.mapper;
 
+import com.lijian.entity.User;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @Author lijia
@@ -9,4 +12,7 @@ import org.apache.ibatis.annotations.Insert;
 public interface UserMapper {
     @Insert("")
     public int insertUser();
+
+    @Select("select * from user where id = #{id}")
+    public User selectById(@Param("id") Integer id);
 }
